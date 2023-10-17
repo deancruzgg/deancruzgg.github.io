@@ -10984,6 +10984,12 @@ body {
   min-height: 3.5rem;
   background-color: #fff;
 }
+
+#projectsNav {
+  min-height: 3.5rem;
+  background-color: #000;
+}
+
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
@@ -11341,4 +11347,19 @@ body {
 
 .projects-header {
   text-align: center;
+}
+
+.mainContainer {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.contentContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.viewAllLink {
+  margin-top: 1rem;
 }
