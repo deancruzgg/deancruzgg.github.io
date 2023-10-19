@@ -42,26 +42,26 @@
         </div>
     </nav>
     <!-- Masthead-->
-    <header class="masthead">
-        <div id="particles-js"></div>
-        <!-- Dean: modified background to have a bubble effect as well as a text effect-->
-        <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-            <div class="d-flex justify-content-center">
-                <div class="text-center">
-                    <h1 class="mx-auto my-0 text-uppercase">Dean Cruz</h1>
-                    <h2 class="text-white-50 mx-auto mt-2 mb-5">Aspiring Software Engineer</h2>
-                    <a class="animated-button" href="#about">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        Get Started</a>
+    <header class="black">
+        <div class="masthead bg-black-primary">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center headerClass">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <h1 class="mx-auto my-0 text-uppercase">Dean Cruz</h1>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Aspiring Software Engineer</h2>
+                        <a class="animated-button" href="#about">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Get Started</a>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
     <!-- About-->
-    <section class="about-section text-center">
+    <section class="about-section text-center bg-black-primary">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-8">
@@ -71,7 +71,9 @@
                             Hi, my name is <b><span class="highlighted-text">Dean Cruz</span></b> and I am currently a
                             student in Republic Polytechnic studying for a Diploma in Digital Design and Development. I
                             aspire to one day become a software engineer, and am always looking to evolve my current
-                            skillset beyond what is taught in school. For side projects, I am currently learning how to build interactive websites using HTML, CSS and Javascript. In my spare time, I like to play video games and watch movies.
+                            skillset beyond what is taught in school. For side projects, I am currently learning how to
+                            build interactive websites using HTML, CSS and Javascript. In my spare time, I like to play
+                            video games and watch movies.
                         </div>
                         <img class="img-fluid img-skills" src="assets/img/skills.png" alt="my skills" />
                     </div>
@@ -80,9 +82,9 @@
         </div>
     </section>
     <!-- Projects-->
-    <section class="projects-section bg-light" id="portfolio">
+    <section class="projects-section bg-black-primary" id="portfolio">
         <div class="container px-4 px-lg-5">
-            <h2 class="text-black mb-4 projects-header">Portfolio</h2>
+            <h2 class="text-white mb-4 projects-header">Portfolio</h2>
             <!-- Featured Project Row-->
             <div class="row gx-0 mb-4 mb-lg-5 align-items-center gallery-container">
                 <div class="col-xl-8 col-lg-7 gallery">
@@ -112,75 +114,117 @@
                 </div>
                 <div class="col-xl-4 col-lg-5">
                     <div class="featured-text text-center text-lg-left">
-                        <h4>Design and Artwork</h4>
-                        <p class="text-black-50 mb-0">A compilation of some of the artwork I've created using Adobe
+                        <h4 class="text-white">Design and Artwork</h4>
+                        <p class="text-white-50 mb-0">A compilation of some of the artwork I've created using Adobe
                             Illustrator and Photoshop. This was done during my time learning in <span
                                 class="highlighted-text">T252: Fundamentals of Design</span>.</p>
                     </div>
                 </div>
             </div>
             <!-- Project One Row-->
-            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                <div class="col-lg-6">
-                    <a href="/assets/img/game gallery/game-menu.png" data-lightbox="game" data-title="Main Menu">
-                        <img class="img-fluid game-img" src="assets/img/game.jpg" alt="game image" />
-                    </a>
-                    <a href="/assets/img/game gallery/game-level-1.png" data-lightbox="game"
-                        data-title="Level 1 Stage"></a>
-                    <a href="/assets/img/game gallery/game-level-2.png" data-lightbox="game"
-                        data-title="Level 2 Stage"></a>
-                    <a href="/assets/img/game gallery/game-death.png" data-lightbox="game"
-                        data-title="Game Over Screen"></a>
+            <div class="projectBox">
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6">
+                        <a href="/assets/img/game gallery/game-menu.png" data-lightbox="game" data-title="Main Menu">
+                            <img class="img-fluid game-img" src="assets/img/game.jpg" alt="game image" />
+                        </a>
+                        <a href="/assets/img/game gallery/game-level-1.png" data-lightbox="game"
+                            data-title="Level 1 Stage"></a>
+                        <a href="/assets/img/game gallery/game-level-2.png" data-lightbox="game"
+                            data-title="Level 2 Stage"></a>
+                        <a href="/assets/img/game gallery/game-death.png" data-lightbox="game"
+                            data-title="Game Over Screen"></a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="bg-black-primary text-center h-100">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Platformer Game Project</h4>
+                                    <p class="mb-0 text-white-50">A platformer game I have made in <span
+                                            class="highlighted-text">Java</span> with the help of video tutorials.</p>
+                                    <br>
+                                    <a class="project-links"
+                                        href="https://github.com/deancruz1997/platformer-game-project">More Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="bg-black text-center h-100 project">
-                        <div class="d-flex h-100">
-                            <div class="project-text w-100 my-auto text-center text-lg-left">
-                                <h4 class="text-white">Platformer Game Project</h4>
-                                <p class="mb-0 text-white-50">A platformer game I have made in <span
-                                        class="highlighted-text">Java</span> with the help of video tutorials.</p><br>
-                                <a class="project-links"
-                                    href="https://github.com/deancruz1997/platformer-game-project">Link - Repository</a>
+                <!-- Project Two Row-->
+                <div class="row gx-0 justify-content-center">
+                    <div class="col-lg-6">
+                        <a href="/assets/img/wireframe gallery/wireframe-home.png" data-lightbox="wireframe"
+                            data-title="Home Page">
+                            <img class="img-fluid wireframe-img" src="assets/img/wireframe.jpg" alt="wireframe image" />
+                        </a>
+                        <a href="/assets/img/wireframe gallery/wireframe-about-me.png" data-lightbox="wireframe"
+                            data-title="About Me Page"></a>
+                        <a href="/assets/img/wireframe gallery/wireframe-portfolio.png" data-lightbox="wireframe"
+                            data-title="Portfolio Page"></a>
+                        <a href="/assets/img/wireframe gallery/wireframe-contact.png" data-lightbox="wireframe"
+                            data-title="Contact Page"></a>
+                    </div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black-primary text-center h-100">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white">Wireframe Design - Portfolio</h4>
+                                    <p class="mb-0 text-white-50">A navigable prototype of my portfolio website,
+                                        done
+                                        through <span class="highlighted-text">Adobe XD</span>.</p><br>
+                                    <a class="project-links"
+                                        href="https://xd.adobe.com/view/ff47b771-facc-42d4-9af3-0043a8316f16-aa14">More
+                                        Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6">
+                        <a href="/assets/img/reviews gallery/homepage.jpg" data-lightbox="moviereviews" data-title="Home Page">
+                            <img class="img-fluid game-img" src="assets/img/movie-website.jpg"
+                                alt="movie website image" />
+                        </a>
+                        <a href="/assets/img/reviews gallery/reviewpage.jpg" data-lightbox="moviereviews"
+                            data-title="Reviews Page"></a>
+                        <a href="/assets/img/reviews gallery/updatereview.jpg" data-lightbox="moviereviews"
+                            data-title="Updating of a Review"></a>
+                        <a href="/assets/img/reviews gallery/searchfunction.jpg" data-lightbox="moviereviews"
+                            data-title="Search Function"></a>
+                    </div>
+                    <!-- Project Three Row-->
+                    <div class="col-lg-6">
+                        <div class="bg-black-primary text-center h-100">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Movie Reviews Website</h4>
+                                    <p class="mb-0 text-white-50">A functioning movies reviews website using <span
+                                            class="highlighted-text">PHP</span> and <span
+                                            class="highlighted-text">mySQL</span>, users are able to write, edit and
+                                        delete reviews for their favourite movies.</p>
+                                    <br>
+                                    <a class="project-links"
+                                        href="https://github.com/deancruz1997/Movietopia-Project">More Details</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Project Two Row-->
-            <div class="row gx-0 justify-content-center">
-                <div class="col-lg-6">
-                    <a href="/assets/img/wireframe gallery/wireframe-home.png" data-lightbox="wireframe"
-                        data-title="Home Page">
-                        <img class="img-fluid wireframe-img" src="assets/img/wireframe.jpg" alt="wireframe image" />
-                    </a>
-                    <a href="/assets/img/wireframe gallery/wireframe-about-me.png" data-lightbox="wireframe"
-                        data-title="About Me Page"></a>
-                    <a href="/assets/img/wireframe gallery/wireframe-portfolio.png" data-lightbox="wireframe"
-                        data-title="Portfolio Page"></a>
-                    <a href="/assets/img/wireframe gallery/wireframe-contact.png" data-lightbox="wireframe"
-                        data-title="Contact Page"></a>
-                </div>
-                <div class="col-lg-6 order-lg-first">
-                    <div class="bg-black text-center h-100 project">
-                        <div class="d-flex h-100">
-                            <div class="project-text w-100 my-auto text-center text-lg-right">
-                                <h4 class="text-white">Wireframe Design - Portfolio</h4>
-                                <p class="mb-0 text-white-50">A navigable prototype of my portfolio website, done
-                                    through <span class="highlighted-text">Adobe XD</span>.</p><br>
-                                <a class="project-links"
-                                    href="https://xd.adobe.com/view/ff47b771-facc-42d4-9af3-0043a8316f16-aa14">Link -
-                                    Adobe XD</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="text-center viewAllLink">
+                <a class="animated-button" href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    View All Projects</a>
             </div>
-            <div class="text-center viewAllLink"><a href="#">View All Projects</a></div>
         </div>
     </section>
 
     <!-- Contact-->
-    <section class="contact-section" id="contact">
+    <section class="contact-section bg-black" id="contact">
         <h2 class="text-white mb-4 contact-me">Contact</h2>
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5">
@@ -226,16 +270,20 @@
         </div>
     </section>
     <!-- Footer-->
-    <footer class="footer small text-center text-white-50">
+    <footer class="footer small text-center text-white-50 bg-black">
         <div class="container px-4 px-lg-5">Copyright &copy; Dean Cruz 2023</div>
     </footer>
+    <div id="particles-js"></div>
+    <div id="particles-static-js"></div>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="/js/lightbox-plus-jquery.js"></script>
     <script src="js/scripts.js"></script>
     <script type="text/javascript" src="js/particles.js"></script>
+    <script type="text/javascript" src="js/particles-static.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/app-static.js"></script>
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
 
