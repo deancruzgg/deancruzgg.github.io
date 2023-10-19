@@ -11245,6 +11245,8 @@ body {
 
 .contact-me {
   text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 #particles-js {
@@ -11338,7 +11340,8 @@ body {
 }
 
 .about-me-header {
-  font-size: 2rem;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .about-me-desc {
@@ -11347,6 +11350,8 @@ body {
 
 .projects-header {
   text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .mainContainer {
@@ -11362,4 +11367,27 @@ body {
 
 .viewAllLink {
   margin-top: 1rem;
+}
+
+
+
+@media (min-width: 1200px) {
+  .col-lg-8 {
+    width: 100%;
+    margin-bottom: 6rem;
+  }
+
+  .aboutAndSkills {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  .img-skills {
+    max-width:50%;
+    height: auto;
+  }
+
+  #about {
+    padding-top: 2.5rem;
+  }
 }
