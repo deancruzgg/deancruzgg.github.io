@@ -7947,6 +7947,36 @@ fieldset:disabled .btn {
   z-index: 1020;
 }
 
+@media (max-width: 576px) {
+  .sticky-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+}
+
+@media (max-width: 768px) {
+  .sticky-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+}
+
+@media (max-width: 992px) {
+  .sticky-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+}
+
 @media (min-width: 576px) {
   .sticky-sm-top {
     position: sticky;
