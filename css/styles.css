@@ -13343,11 +13343,18 @@ body {
     object-position: 100% center;
     border-radius: 15px;
     border-bottom: 4px solid #64a19d;
-
   }
 
   .project-container:hover .image {
     box-shadow: 0 0 30px #64a19d;
+  }
+
+  .project-container img {
+    transition: transform 400ms ease-in-out;
+  }
+
+  .project-container:hover img {
+    transform: scale(1.1);
   }
 
   .all-projects-header {
@@ -13370,13 +13377,25 @@ body {
     width: 40vmin;
     height: 0;
     background: linear-gradient(0deg, #00000088 30%, #ffffff44 100%);
+    padding: 1rem;
     border-radius: 15px;
-    transition: height 500ms ease-in-out;
     overflow: hidden;
+    text-align: left;
+    display: flex;
+    align-items: flex-end;
+    opacity: 0;
+    font-weight: bold;
+    transition: height 500ms ease-in-out, opacity 500ms ease-in, transform 400ms ease-in-out;
+  }
+
+  .overlay h2 {
+    font-size: 2rem;
   }
 
   .project-container:hover .overlay {
     height: 56vmin;
+    opacity: 1;
+    transform: scale(1.1);
   }
   
   .project-wrapper {
