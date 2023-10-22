@@ -13128,17 +13128,6 @@ body {
   box-shadow: 0 0 30px #64a19d;
 }
 
-.game-img,
-.wireframe-img {
-  transition: transform .2s;
-}
-
-.game-img:hover,
-.wireframe-img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 30px #64a19d;
-}
-
 .contact-me {
   text-align: center;
   font-size: 3rem;
@@ -13327,7 +13316,7 @@ body {
   overflow-x: hidden;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 991px) {
   #image-track {
     display: flex;
     gap: 4vmin;
@@ -13340,7 +13329,7 @@ body {
     /* -- Prevent image highlighting -- */
   }
 
-  #image-track>.image {
+  .project-wrapper>.image {
     width: 40vmin;
     height: 56vmin;
     object-fit: cover;
@@ -13351,9 +13340,99 @@ body {
 
   }
 
-  #image-track>.image:hover {
+  .project-wrapper>.image:hover {
     transform: scale(1.05);
     box-shadow: 0 0 30px #64a19d;
   }
 
+  .all-projects-header {
+    font-weight: bold;
+    position: absolute;
+    top: 8%;
+    font-size: 3rem;
+  }
+
+  .all-projects-subtext {
+    position: absolute;
+    top: 15%;
+  }
+}
+
+@media (max-width: 800px) {
+  .headerClass {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #image-track {
+    display: flex;
+    flex-direction: column;
+    gap: 12vmin;
+  }
+
+  .project-wrapper>.image {
+    width: 80vmin;
+    height: 102vmin;
+    object-fit: cover;
+    border-radius: 15px;
+    border-bottom: 4px solid #64a19d;
+  }
+
+  #project-masthead {
+    padding-top: 4rem;
+    padding-bottom: 0;
+  }
+
+  .all-projects-header {
+    font-weight: bold;
+    top: 3%;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .all-projects-subtext {
+    display: none;
+  }
+}
+
+@media (max-width: 990px) {
+  .headerClass {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #image-track {
+    display: flex;
+    flex-direction: column;
+    gap: 12vmin;
+  }
+
+  .project-wrapper>.image {
+    width: 80vmin;
+    height: 102vmin;
+    object-fit: cover;
+    border-radius: 15px;
+    border-bottom: 4px solid #64a19d;
+  }
+
+  #project-masthead {
+    padding-top: 4rem;
+    padding-bottom: 0;
+  }
+
+  .all-projects-header {
+    font-weight: bold;
+    top: 2%;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .all-projects-subtext {
+    display: none;
+  }
+}
+
+
+.project-title {
+  padding-top: 1rem;
 }
