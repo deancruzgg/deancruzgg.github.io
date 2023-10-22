@@ -13323,13 +13323,11 @@ body {
   #image-track {
     display: flex;
     gap: 4vmin;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 40%;
-    right: -25%;
     transform: translate(0%, -50%);
     user-select: none;
-    /* -- Prevent image highlighting -- */
   }
 
   .project-container {
@@ -13359,14 +13357,7 @@ body {
 
   .all-projects-header {
     font-weight: bold;
-    position: absolute;
-    top: 8%;
     font-size: 3rem;
-  }
-
-  .all-projects-subtext {
-    position: absolute;
-    top: 15%;
   }
 
   .overlay {
