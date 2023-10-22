@@ -13323,7 +13323,7 @@ body {
     position: absolute;
     top: 50%;
     left: 40%;
-    right: -30%;
+    right: -25%;
     transform: translate(0%, -50%);
     user-select: none;
     /* -- Prevent image highlighting -- */
