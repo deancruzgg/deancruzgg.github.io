@@ -13323,13 +13323,37 @@ body {
   border-radius: 3px;
 }
 
-.carousel {
-  overflow: auto;
-  display: flex;
-  scroll-snap-type: x mandatory;
-  scroll-padding: 0 24px;
+.projectsPage {
+  overflow-x: hidden;
 }
 
-.carousel .item {
-  scroll-snap-align: start;
+@media (min-width: 1200px) {
+  #image-track {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    right: -30%;
+    transform: translate(0%, -50%);
+    user-select: none;
+    /* -- Prevent image highlighting -- */
+  }
+
+  #image-track>.image {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: 100% center;
+    border-radius: 15px;
+    border-bottom: 4px solid #64a19d;
+    transition: transform .2s;
+
+  }
+
+  #image-track>.image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #64a19d;
+  }
+
 }
