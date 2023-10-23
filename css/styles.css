@@ -13591,21 +13591,43 @@ body {
 
 @media (max-width: 800px) {
   .indiv-left, .indiv-right {
-    width: 100%;
+    width: auto;
     margin: 1rem 2rem;
   }
 
   .indiv-subcontainer {
     display: flex;
     flex-direction: column;
-    width: 150vmin;
+    width: 100%;
+    margin: 2rem 0 2rem 0;
   }
 
   .projects-section {
     padding: 0;
   }
 
-  .indiv-left td {
-    word-wrap: break-word;
+  .cat-link {
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .categories, .descriptions {
+    font-size: 90%;
+  }
+
+  .cat-desc {
+    font-size: 90%;
+  }
+
+  .individual-projects-img .individual-img {
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+  }
+  
+  .individual-overlay {
+
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+
   }
 }
