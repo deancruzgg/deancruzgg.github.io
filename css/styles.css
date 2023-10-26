@@ -13709,7 +13709,6 @@ body {
   flex-wrap: wrap;
   justify-content:center;
   gap: 2rem;
-  margin: 0 5rem;
 }
 
 .gallery-subcontainer-indiv img {
@@ -13731,6 +13730,7 @@ body {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
+    width: 100%;
   }
 
   .gallery-subcontainer-indiv img {
@@ -13738,6 +13738,14 @@ body {
     height: 24rem;
   }
 }
+
+@media (max-width: 800px) {
+  .gallery-subcontainer-indiv img {
+    width: 30rem;
+    height: 16rem;
+  }
+}
+
 
 @media (max-width: 576px) {
   .gallery-subcontainer-indiv img {
