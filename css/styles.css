@@ -13417,6 +13417,10 @@ body {
     transition: height 500ms ease, opacity 250ms ease-in, transform 200ms ease-in-out;
   }
 
+  .align-right .gallery-overlay {
+    justify-content: flex-end;
+  }
+
   .gallery-overlay h2 {
     font-size: 3rem;
     font-weight: bold;
