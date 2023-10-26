@@ -13282,6 +13282,7 @@ body {
     display: flex;
     width: 100%;
     align-items: center;
+    gap: 2rem;
   }
 
   .img-skills {
@@ -13415,6 +13416,16 @@ body {
     opacity: 0;
     font-weight: bold;
     transition: height 500ms ease, opacity 250ms ease-in, transform 200ms ease-in-out;
+  }
+
+  .pad-overlay .gallery-overlay {
+    padding: 1rem;
+    transition: height 300ms ease opacity 250ms ease-in, transform 200ms ease-in-out;
+  }
+
+  .gallery-overlay .overlay-text {
+    font-size: 1.2rem;
+    font-weight: 400;
   }
 
   .align-right .gallery-overlay {
@@ -13675,4 +13686,66 @@ body {
 
 .descriptions img {
   width: 50%;
+}
+
+.gallery-container-indiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem;
+  gap: 1rem;
+}
+
+@media (max-width: 800px) {
+  .gallery-container-indiv {
+    margin: 2rem 0 2rem 0;
+  }
+}
+
+.gallery-subcontainer-indiv {
+  display: flex;
+  width: 150vmin;
+  flex-wrap: wrap;
+  justify-content:center;
+  gap: 2rem;
+  margin: 0 5rem;
+}
+
+.gallery-subcontainer-indiv img {
+  width: 20rem;
+  height: 12rem;
+  object-fit: cover;
+  object-position: 100% center;
+  border-radius: 15px;
+  border-bottom: 4px solid #64a19d;
+}
+
+@media (max-width: 1000px) {
+  .gallery-overlay {
+    display: none;
+  }
+
+  .gallery-subcontainer-indiv {
+    gap: 3rem;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .gallery-subcontainer-indiv img {
+    width: 40rem;
+    height: 24rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery-subcontainer-indiv img {
+    width: 20rem;
+    height: 12rem;
+  }
+}
+
+.projects-section .gallery-container-indiv {
+  margin-top: 0;
 }
