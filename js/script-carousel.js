@@ -47,3 +47,29 @@ if (window.matchMedia("(min-width: 999px)").matches) {
     window.ontouchmove = e => handleOnMove(e.touches[0]);
 }
 
+if (window.matchMedia("(min-width: 999px)").matches) {
+    const track = document.getElementById("image-track");
+    const period = 35000;
+    let direction = -1;
+    let percentage = 0;
+
+    const animateImage = () => {
+        percentage += (direction * 100 / period) * 16;
+
+        if (percentage >= 0 || percentage <= -80) {
+            direction = -direction;
+        }
+
+        track.dataset.percentage = percentage;
+
+        track.style.transform = `translate(${percentage}%, -50%)`;
+
+        for (const image of track.getElementsByClassName("image")) {
+            image.style.objectPosition = `${100 + percentage}% center`;
+        }
+
+        requestAnimationFrame(animateImage);
+    }
+
+    animateImage();
+}
