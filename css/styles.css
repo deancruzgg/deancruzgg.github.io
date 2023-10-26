@@ -13631,3 +13631,7 @@ body {
 
   }
 }
+
+.descriptions img {
+  width: 50%;
+}
