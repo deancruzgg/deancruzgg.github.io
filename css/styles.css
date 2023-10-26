@@ -13302,6 +13302,9 @@ body {
   .overlay {
     display: none;
   }
+  .gallery-overlay {
+    display: none;
+  }
 }
 
 .projectBox {
