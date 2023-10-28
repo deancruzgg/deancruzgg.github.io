@@ -56,7 +56,8 @@ if (window.matchMedia("(min-width: 999px)").matches) {
     const animateImage = () => {
         percentage += (direction * 100 / period) * 16;
 
-        if (percentage >= 0 || percentage <= -80) {
+        // Edit this to adjust how far the track goes before it oscillates
+        if (percentage >= 0 || percentage <= -85) {
             direction = -direction;
         }
 
