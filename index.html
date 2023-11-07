@@ -52,7 +52,65 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Projects</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Projects
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./landing-page.html">
+                                <table class="dropdown-nav-item">
+                                    <tr>
+                                        <td>Landing Page</td>
+                                        <td>Front-End</td>
+                                    </tr>
+                                </table>
+                            </a>
+                            <a class="dropdown-item" href="./fansite.html">
+                                <table class="dropdown-nav-item">
+                                    <tr>
+                                        <td>Fansite</td>
+                                        <td>Front-End</td>
+                                    </tr>
+                                </table>
+                            </a>
+                            <a class="dropdown-item" href="./reviews.html">
+                                <table class="dropdown-nav-item">
+                                    <tr>
+                                        <td>Movietopia</td>
+                                        <td>Programming</td>
+                                    </tr>
+                                </table>
+                            </a>
+                            <a class="dropdown-item" href="./platformer.html">
+                                <table class="dropdown-nav-item">
+                                    <tr>
+                                        <td>Platformer</td>
+                                        <td>Programming</td>
+                                    </tr>
+                                </table>
+                            </a>
+                            <a class="dropdown-item" href="./design.html">
+                                <table class="dropdown-nav-item">
+                                    <tr>
+                                        <td>2D Artwork</td>
+                                        <td>Design</td>
+                                    </tr>
+                                </table>
+                            </a>
+                            <a class="dropdown-item" href="./wireframe.html">
+                                <table class="dropdown-nav-item">
+                                    <tr>
+                                        <td>Prototype</td>
+                                        <td>Design</td>
+                                    </tr>
+                                </table>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./index.html#portfolio">Featured Projects</a>
+                            <a class="dropdown-item" href="./projects.html">All Projects</a>
+                        </div>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -149,28 +207,26 @@
             <!-- Project Three Row-->
             <div class="row gx-0 mb-4 mb-lg-5 align-items-center gallery-container">
                 <div class="col-xl-8 col-lg-7 gallery gallery-project-container">
-                    <a href="/assets/img/wireframe gallery/wireframe-home.png" data-lightbox="wireframe"
+                    <a href="/assets/img/fansite gallery/card1.jpg" data-lightbox="fansite"
                         data-title="Home Page" class="project-wrapper align-right">
-                        <img class="img-fluid mb-3 mb-lg-0 design-img-1" src="assets/img/wireframe.jpg"
-                            alt="wireframe image" />
+                        <img class="img-fluid mb-3 mb-lg-0 design-img-1" src="assets/img/fansite.jpg"
+                            alt="fansite image" />
                         <div class="gallery-overlay">
                             <h2 class="text-white">View Preview</h2>
                         </div>
                     </a>
-                    <a href="/assets/img/wireframe gallery/wireframe-about-me.png" data-lightbox="wireframe"
-                        data-title="About Me Page"></a>
-                    <a href="/assets/img/wireframe gallery/wireframe-portfolio.png" data-lightbox="wireframe"
-                        data-title="Portfolio Page"></a>
-                    <a href="/assets/img/wireframe gallery/wireframe-contact.png" data-lightbox="wireframe"
-                        data-title="Contact Page"></a>
+                    <a href="/assets/img/fansite gallery/card2.jpg" data-lightbox="fansite"
+                        data-title="Characters Page - 01"></a>
+                    <a href="/assets/img/fansite gallery/card3.jpg" data-lightbox="fansite"
+                        data-title="Characters Page - 02"></a>
                 </div>
                 <div class="col-xl-4 col-lg-5">
                     <div class="featured-text text-center text-lg-left">
-                        <h4 class="text-white">Portfolio - Prototype</h4>
-                        <p class="text-white-50 mb-0">A navigable prototype of my portfolio website,
-                            done
-                            through <span class="highlighted-text">Adobe XD</span>.</p><br />
-                        <a class="project-links" href="wireframe.html">Discover More</a>
+                        <h4 class="text-white">Anime Fansite</h4>
+                        <p class="text-white-50 mb-0">A website I am making in my spare time without the use of
+                            bootstrap templates, mainly using <span class="highlighted-text">HTML</span>, <span class="highlighted-text">CSS</span> and <span
+                                class="highlighted-text">Javascript</span>.</p><br />
+                        <a class="project-links" href="./fansite.html">Discover More</a>
 
                     </div>
                 </div>
@@ -244,6 +300,9 @@
     <div id="particles-static-js"></div>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Core theme JS-->
     <script src="/js/lightbox-plus-jquery.js"></script>
     <script src="js/scripts.js"></script>

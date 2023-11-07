@@ -13757,3 +13757,13 @@ body {
 .projects-section .gallery-container-indiv {
   margin-top: 0;
 }
+
+.dropdown-nav-item td {
+  width: 100%;
+}
+
+@media (min-width: 995px) {
+  .dropdown-nav-item {
+    min-width: 12.5vw;
+  }
+}
