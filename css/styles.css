@@ -1478,7 +1478,7 @@ progress {
 
   .col-lg-7 {
     flex: 0 0 auto;
-    width: 32%;
+    width: 28%;
   }
 
   .col-lg-8 {
@@ -13300,9 +13300,11 @@ body {
     font-size: 1rem;
     margin-bottom: 1.5rem;
   }
+
   .overlay {
     display: none;
   }
+
   .gallery-overlay {
     display: none;
   }
@@ -13339,7 +13341,7 @@ body {
     object-position: 100% center;
     border-radius: 15px;
     border-bottom: 4px solid #64a19d;
-    transform-origin: bottom; 
+    transform-origin: bottom;
   }
 
   .project-container:hover .image {
@@ -13386,7 +13388,7 @@ body {
     opacity: 0;
     font-weight: bold;
     transition: height 500ms ease, opacity 250ms ease-in, transform 400ms ease-in-out;
-    transform-origin: bottom; 
+    transform-origin: bottom;
   }
 
   .overlay h2 {
@@ -13442,7 +13444,7 @@ body {
     opacity: 1;
     transform: scale(1.05);
   }
-  
+
   .project-wrapper {
     display: inline-block;
     position: relative;
@@ -13607,7 +13609,8 @@ body {
   margin: 2rem;
 }
 
-.indiv-left, .indiv-right {
+.indiv-left,
+.indiv-right {
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -13622,7 +13625,8 @@ body {
   vertical-align: top;
 }
 
-.categories, .descriptions {
+.categories,
+.descriptions {
   padding: 0 1rem 1rem 0;
 }
 
@@ -13642,7 +13646,9 @@ body {
 }
 
 @media (max-width: 800px) {
-  .indiv-left, .indiv-right {
+
+  .indiv-left,
+  .indiv-right {
     width: auto;
     margin: 1rem 2rem;
   }
@@ -13662,8 +13668,9 @@ body {
     font-weight: bold;
     text-align: center;
   }
-  
-  .categories, .descriptions {
+
+  .categories,
+  .descriptions {
     font-size: 90%;
   }
 
@@ -13675,7 +13682,7 @@ body {
     border-bottom-right-radius: 2rem;
     border-bottom-left-radius: 2rem;
   }
-  
+
   .individual-overlay {
 
     border-bottom-right-radius: 2rem;
@@ -13707,7 +13714,7 @@ body {
   display: flex;
   width: 150vmin;
   flex-wrap: wrap;
-  justify-content:center;
+  justify-content: center;
   gap: 2rem;
 }
 
@@ -13781,5 +13788,33 @@ body {
 
   .gallery-container:last-child {
     padding-bottom: 0rem;
+  }
+}
+
+.divider-container {
+  display: none;
+}
+
+.section-divider {
+  width: 90%;
+  height: 3px;
+  background-color: #67c29c;
+  border-radius: 15px;
+  margin: 2rem;
+}
+
+.section-divider-project {
+  width: 60%;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  margin: 2rem;
+}
+
+@media (max-width: 992px) {
+  .divider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
