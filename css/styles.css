@@ -282,12 +282,12 @@ sup {
 }
 
 a {
-  color: var(--bs-link-color);
+  color: #67c29c;
   text-decoration: underline;
 }
 
 a:hover {
-  color: var(--bs-link-hover-color);
+  color: #64a19d;
 }
 
 a:not([href]):not([class]),
@@ -12981,15 +12981,15 @@ body {
 
   .masthead h1,
   .masthead .h1 {
-    font-size: 6.5rem;
-    line-height: 6.5rem;
+    font-size: 8.5rem;
+    line-height: 8.5rem;
     letter-spacing: 0.8rem;
   }
 
   .masthead h2,
   .masthead .h2 {
     max-width: 30rem;
-    font-size: 1.25rem;
+    font-size: 2rem;
   }
 }
 
@@ -13114,7 +13114,7 @@ body {
 }
 
 .highlighted-text {
-  color: #558985;
+  color: #67c29c;
 }
 
 .design-img-1 {
@@ -13163,7 +13163,7 @@ body {
   position: relative;
   display: inline-block;
   padding: 15px 30px;
-  color: #64a19d;
+  color: #67c29c;
   text-transform: uppercase;
   letter-spacing: 4px;
   text-decoration: none;
@@ -13174,8 +13174,8 @@ body {
 
 .animated-button:hover {
   color: #558985;
-  background: #64a19d;
-  box-shadow: 0 0 10px #64a19d, 0 0 40px #64a19d, 0 0 80px #64a19d;
+  background: #67c29c;
+  box-shadow: 0 0 10px #67c29c, 0 0 40px #67c29c, 0 0 80px #67c29c;
   transition-delay: 1s;
 }
 
@@ -13189,7 +13189,7 @@ body {
   left: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #64a19d);
+  background: linear-gradient(90deg, transparent, #67c29c);
 }
 
 .animated-button:hover span:nth-child(1) {
@@ -13202,7 +13202,7 @@ body {
   right: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(270deg, transparent, #64a19d);
+  background: linear-gradient(270deg, transparent, #67c29c);
 }
 
 .animated-button:hover span:nth-child(3) {
@@ -13216,7 +13216,7 @@ body {
   right: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(180deg, transparent, #64a19d);
+  background: linear-gradient(180deg, transparent, #67c29c);
 }
 
 .animated-button:hover span:nth-child(2) {
@@ -13230,7 +13230,7 @@ body {
   left: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(360deg, transparent, #64a19d);
+  background: linear-gradient(360deg, transparent, #67c29c);
 }
 
 .animated-button:hover span:nth-child(4) {
@@ -13764,6 +13764,6 @@ body {
 
 @media (min-width: 995px) {
   .dropdown-nav-item {
-    min-width: 12.5vw;
+    min-width: 325px;
   }
 }
