@@ -13631,8 +13631,9 @@ body {
 }
 
 .categories {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   width: 45%;
+  text-transform: uppercase;
 }
 
 .descriptions ul {
