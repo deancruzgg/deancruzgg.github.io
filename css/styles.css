@@ -13392,7 +13392,8 @@ body {
   }
 
   .overlay h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
   }
 
   .project-container:hover .overlay {
@@ -13779,8 +13780,8 @@ body {
     margin-right: 1rem;
   }
 
-  .gall-first {
-    padding-top: 2.5rem;
+  .gall-first, .ctc-padding {
+    padding-top: 1rem;
   }
 
   .gallery-container {
@@ -13824,5 +13825,24 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+
+.about-me-header, .contact-me {
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 576px) {
+  .individual-overlay {
+    padding: 1.5rem;
+  }
+
+  .individual-overlay h2 {
+    padding: 0;
+    margin: 0 !important;
+  }
+
+  .individual-overlay>.projects-header {
+    text-align: left;
   }
 }
