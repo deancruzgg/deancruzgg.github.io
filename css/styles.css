@@ -13846,3 +13846,13 @@ body {
     text-align: left;
   }
 }
+
+@media (max-width: 992px) {
+  .individual-overlay {
+    padding: 1.5rem;
+  }
+
+  .individual-overlay>.projects-header {
+    text-align: left;
+  }
+}
