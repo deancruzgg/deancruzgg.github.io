@@ -13606,6 +13606,16 @@ body {
   .individual-overlay h2 {
     font-size: 2rem;
   }
+
+  /* Square Container */
+  .indiv-container {
+    margin: 6rem 2.5rem 0 2.5rem;
+  }
+
+  .individual-img, .individual-overlay {
+    border-radius: 2rem;
+  }
+
 }
 
 .indiv-subcontainer {
