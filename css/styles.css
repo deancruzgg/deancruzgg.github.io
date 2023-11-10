@@ -13609,11 +13609,15 @@ body {
 
   /* Square Container */
   .indiv-container {
-    margin: 6rem 2.5rem 0 2.5rem;
+    margin: 5.5rem 1.5rem 0 1.5rem;
   }
 
   .individual-img, .individual-overlay {
     border-radius: 2rem;
+  }
+
+  .individual-overlay>h2 {
+    font-size: 1.5rem;
   }
 
 }
