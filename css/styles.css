@@ -13876,4 +13876,20 @@ body {
   .individual-overlay>.projects-header {
     text-align: left;
   }
+
+  .projects-section>.indiv-container {
+    margin: 0;
+  }
+
+  .indiv-subcontainer {
+    margin-bottom: 0;
+  }
+
+  .contact-section {
+    padding-top: 2.5rem;
+  }
+
+  .about-me-header, .contact-me {
+    padding-bottom: 0;
+  }
 }
