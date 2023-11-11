@@ -12,6 +12,10 @@ window.addEventListener('DOMContentLoaded', event => {
     //Parallax
     const parallax_el = document.querySelectorAll(".parallax");
     const animatedBtn = document.querySelector('.parallax-btn');
+    const parallaxText = document.querySelector('.text-parallax');
+    var isScrolling = false;
+    var scrollTimeout;
+
     let xValue = 0, yValue = 0;
 
     let rotateDegree = 0;
@@ -35,6 +39,25 @@ window.addEventListener('DOMContentLoaded', event => {
 
     updateParallax(0);
 
+    document.addEventListener("scroll", function () {
+        var scrollPosition = window.scrollY;
+
+        if (!timeline.isActive()) {
+            isScrolling = true;
+
+            parallaxText.style.transform = "translate(-50%, " + (scrollPosition / 2 - 50) + "px)";
+
+            if (scrollPosition == 0)
+                parallaxText.style.transform = "translate(-50%, -50%)";
+
+            clearTimeout(scrollTimeout);
+
+            scrollTimeout = setTimeout(function () {
+                isScrolling = false;
+            }, 500);
+        }
+    });
+
     window.addEventListener("mousemove", (e) => {
         if (timeline.isActive()) {
             animatedBtn.classList.add('disable-hover');
@@ -42,13 +65,13 @@ window.addEventListener('DOMContentLoaded', event => {
         } else
             animatedBtn.classList.remove('disable-hover');
 
+        if (!isScrolling) {
+            xValue = e.clientX - window.innerWidth / 2;
+            yValue = e.clientY - window.innerHeight / 2;
 
-        xValue = e.clientX - window.innerWidth / 2;
-        yValue = e.clientY - window.innerHeight / 2;
-
-        rotateDegree = (xValue / (window.innerWidth / 2)) * 20;
-
-        updateParallax(e.clientX);
+            rotateDegree = (xValue / (window.innerWidth / 2)) * 20;
+            updateParallax(e.clientX);
+        };
     });
 
     // GSAP animation
@@ -95,7 +118,6 @@ window.addEventListener('DOMContentLoaded', event => {
     },
         "3.5"
     )
-
 
     // Navbar shrink function
     var navbarShrink = function () {
