@@ -46,12 +46,6 @@ window.addEventListener('DOMContentLoaded', event => {
         updateParallax(e.clientX);
     });
 
-    // Responsive Script
-    if (window.innerWidth >= 725) {
-        hero.style.maxHeight = `${window.innerWidth * 0.6}px`
-    } else {
-        hero.style.maxHeight = `${window.innerWidth * 1.6}px`
-    };
 
     // GSAP animation
     let timeline = gsap.timeline();
