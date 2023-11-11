@@ -13179,7 +13179,7 @@ body {
 }
 
 .parallax-btn {
-  text-shadow: 1px 1px 10px #000, 1px 1px 10px #000;
+  text-shadow:1px 1px 10px #000, 1px 1px 10px #000;
 }
 
 .animated-button:hover {
@@ -13617,8 +13617,7 @@ body {
     margin: 5.5rem 1.5rem 0 1.5rem;
   }
 
-  .individual-img,
-  .individual-overlay {
+  .individual-img, .individual-overlay {
     border-radius: 2rem;
   }
 
@@ -13881,7 +13880,7 @@ body {
 
   .individual-overlay h2 {
     font-size: 2.5rem;
-    margin-bottom: 0 !important;
+    margin-bottom: 0 !important; 
     padding: 0 0 0 1rem;
   }
 
@@ -13901,8 +13900,7 @@ body {
     padding-top: 2.5rem;
   }
 
-  .about-me-header,
-  .contact-me {
+  .about-me-header, .contact-me {
     padding-bottom: 0;
   }
 
@@ -13921,7 +13919,7 @@ body {
   }
 }
 
-.hero {
+main {
   height: 100vh;
   overflow: hidden;
   position: relative;
@@ -13934,7 +13932,7 @@ body {
 
 .bg-08 {
   position: absolute;
-  width: 109.375%;
+  width: 2100px;
   top: 50%;
   left: 50%;
   z-index: 1;
@@ -13942,41 +13940,41 @@ body {
 
 .moon-07 {
   position: absolute;
-  width: 7.8125%;
-  top: 26.851851852%;
-  left: 55.208333333%;
+  width: 150px;
+  top: calc(50% - 250px);
+  left: calc(50% + 100px);
   z-index: 2;
 }
 
 .mtn-06 {
   position: absolute;
-  width: 28.645833333%;
-  top: 54.629629629%;
-  left: 50%;
+  width: 550px;
+  top: calc(50% + 50px);
+  left: calc(50%);
   z-index: 3;
 }
 
 .mtn-05 {
   position: absolute;
-  width: 88.541666666%;
-  top: 68.518518518%;
-  left: 43.75%;
+  width: 1700px;
+  top: calc(50% + 200px);
+  left: calc(50% - 120px);
   z-index: 4;
 }
 
 .mtn-04 {
   position: absolute;
-  width: 52.083333333%;
-  top: 60%;
-  left: 67.5%;
+  width: 1000px;
+  top: calc(50% + 100px);
+  left: calc(50% + 325px);
   z-index: 5;
 }
 
 .mtn-03 {
   position: absolute;
-  width: 78.125%;
-  top: 52.314814814%;
-  left: 40.625%;
+  width: 1500px;
+  top: calc(50% + 25px);
+  left: calc(50% - 180px);
   z-index: 6;
 }
 
@@ -13992,100 +13990,21 @@ body {
 .text-parallax h1 {
   font-size: 6.5rem;
   font-weight: 600;
-  text-shadow: 1px 1px 10px #000, 1px 1px 10px #67c29c;
+  text-shadow:1px 1px 10px #000, 1px 1px 10px #67c29c;
 }
 
 .text-parallax h2 {
   font-size: 2rem;
-  text-shadow: 1px 1px 10px #000, 1px 1px 10px #67c29c;
+  text-shadow:1px 1px 10px #000, 1px 1px 10px #67c29c;
 
 }
 
 .fg-00 {
   position: absolute;
-  width: 121%;
+  width: 2300px;
   top: calc(50%);
   left: calc(60%);
   z-index: 8;
-}
-
-@media (max-width: 725px) {
-  .bg-08 {
-    position: absolute;
-    width: 109.375%;
-    top: 50%;
-    left: 50%;
-    z-index: 1;
-  }
-
-  .moon-07 {
-    position: absolute;
-    width: 7.8125%;
-    top: 26.851851852%;
-    left: 55.208333333%;
-    z-index: 2;
-  }
-
-  .mtn-06 {
-    position: absolute;
-    width: 28.645833333%;
-    top: 54.629629629%;
-    left: 50%;
-    z-index: 3;
-  }
-
-  .mtn-05 {
-    position: absolute;
-    width: 88.541666666%;
-    top: 68.518518518%;
-    left: 43.75%;
-    z-index: 4;
-  }
-
-  .mtn-04 {
-    position: absolute;
-    width: 52.083333333%;
-    top: 60%;
-    left: 67.5%;
-    z-index: 5;
-  }
-
-  .mtn-03 {
-    position: absolute;
-    width: 78.125%;
-    top: 52.314814814%;
-    left: 40.625%;
-    z-index: 6;
-  }
-
-  .text-parallax {
-    position: absolute;
-    z-index: 7;
-    top: 45%;
-    left: 50%;
-    text-align: center;
-    pointer-events: auto;
-  }
-
-  .text-parallax h1 {
-    font-size: 6.5rem;
-    font-weight: 600;
-    text-shadow: 1px 1px 10px #000, 1px 1px 10px #67c29c;
-  }
-
-  .text-parallax h2 {
-    font-size: 2rem;
-    text-shadow: 1px 1px 10px #000, 1px 1px 10px #67c29c;
-
-  }
-
-  .fg-00 {
-    position: absolute;
-    width: 121%;
-    top: calc(50%);
-    left: calc(60%);
-    z-index: 8;
-  }
 }
 
 .vignette {
@@ -14095,7 +14014,7 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, 0.7));
+  background: radial-gradient(ellipse at center, rgba(0, 0 ,0 ,0) 65%, rgba(0, 0, 0, 0.7));
   pointer-events: none;
 }
 
@@ -14113,7 +14032,7 @@ body {
     align-items: center;
     justify-content: center;
   }
-
+  
   .section-divider-parallax {
     width: 100%;
     height: 10px;
