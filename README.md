@@ -20,3 +20,7 @@ https://www.youtube.com/watch?v=4gcy-qT9kGw - implement a gallery/slideshow feat
 https://www.youtube.com/watch?v=PkADl0HubMY - projects animation carousel
 
 https://itssharl.ee/fr/work/act-responsable - individual projects reference
+
+https://www.youtube.com/watch?v=Yo3j_Dx4u7c - Parallax effect (hero page)
+
+https://gsap.com/ - GSAP Library (Animation)
