@@ -46,7 +46,6 @@ window.addEventListener('DOMContentLoaded', event => {
         updateParallax(e.clientX);
     });
 
-
     // GSAP animation
     let timeline = gsap.timeline();
 
@@ -72,7 +71,7 @@ window.addEventListener('DOMContentLoaded', event => {
     },
     "2.5"
     ).from(".text-parallax .parallax-btn", {
-        y: window.innerHeight - document.querySelector(".text-parallax .parallax-btn").getBoundingClientRect().top,
+        y: window.innerHeight - document.querySelector(".text-parallax .parallax-btn").getBoundingClientRect().top + 200,
         duration: 2,
         ease: "power3.out",
     },
