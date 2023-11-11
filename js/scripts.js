@@ -39,24 +39,26 @@ window.addEventListener('DOMContentLoaded', event => {
 
     updateParallax(0);
 
-    document.addEventListener("scroll", function () {
-        var scrollPosition = window.scrollY;
+    if (window.matchMedia("(min-width: 999px)").matches) {
+        document.addEventListener("scroll", function () {
+            var scrollPosition = window.scrollY;
 
-        if (!timeline.isActive()) {
-            isScrolling = true;
+            if (!timeline.isActive()) {
+                isScrolling = true;
 
-            parallaxText.style.transform = "translate(-50%, " + (scrollPosition / 2 - 50) + "px)";
+                parallaxText.style.transform = "translate(-50%, " + (scrollPosition / 2 - 50) + "px)";
 
-            if (scrollPosition == 0)
-                parallaxText.style.transform = "translate(-50%, -50%)";
+                if (scrollPosition == 0)
+                    parallaxText.style.transform = "translate(-50%, -50%)";
 
-            clearTimeout(scrollTimeout);
+                clearTimeout(scrollTimeout);
 
-            scrollTimeout = setTimeout(function () {
-                isScrolling = false;
-            }, 500);
-        }
-    });
+                scrollTimeout = setTimeout(function () {
+                    isScrolling = false;
+                }, 500);
+            }
+        });
+    };
 
     window.addEventListener("mousemove", (e) => {
         if (timeline.isActive()) {
