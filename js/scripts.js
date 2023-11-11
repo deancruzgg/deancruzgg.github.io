@@ -11,7 +11,7 @@
 window.addEventListener('DOMContentLoaded', event => {
     //Parallax
     const parallax_el = document.querySelectorAll(".parallax");
-    const hero = document.querySelector(".hero");
+    const animatedBtn = document.querySelector('.parallax-btn');
     let xValue = 0, yValue = 0;
 
     let rotateDegree = 0;
@@ -36,7 +36,12 @@ window.addEventListener('DOMContentLoaded', event => {
     updateParallax(0);
 
     window.addEventListener("mousemove", (e) => {
-        if (timeline.isActive()) return;
+        if (timeline.isActive()) {
+            animatedBtn.classList.add('disable-hover');
+            return;
+        } else
+            animatedBtn.classList.remove('disable-hover');
+
 
         xValue = e.clientX - window.innerWidth / 2;
         yValue = e.clientY - window.innerHeight / 2;
@@ -50,18 +55,18 @@ window.addEventListener('DOMContentLoaded', event => {
     let timeline = gsap.timeline();
 
     Array.from(parallax_el)
-    .filter((el) => !el.classList.contains("text-parallax") && !el.classList.contains("fg-00"))
-    .forEach((el) => {
-        timeline.from(
-            el,
-            {
-                top: `${(el.offsetHeight / 2) + +el.dataset.distance}px`,
-                duration: 2,
-                ease: "power3.out",
-            },
-            "1"
-        );
-    });
+        .filter((el) => !el.classList.contains("text-parallax") && !el.classList.contains("fg-00"))
+        .forEach((el) => {
+            timeline.from(
+                el,
+                {
+                    top: `${(el.offsetHeight / 2) + +el.dataset.distance}px`,
+                    duration: 2,
+                    ease: "power3.out",
+                },
+                "1"
+            );
+        });
 
     // Text animation
     timeline.from(".text-parallax h2", {
@@ -69,26 +74,26 @@ window.addEventListener('DOMContentLoaded', event => {
         duration: 2,
         ease: "power3.out",
     },
-    "2.5"
+        "2.5"
     ).from(".text-parallax .parallax-btn", {
         y: window.innerHeight - document.querySelector(".text-parallax .parallax-btn").getBoundingClientRect().top + 200,
         duration: 2,
         ease: "power3.out",
     },
-    "3"
+        "3"
     ).from(".text-parallax h1", {
         y: -150,
         opacity: 0,
         duration: 1.5,
         ease: "power3.out",
     },
-    "3.5"
+        "3.5"
     ).from(".hide", {
         opacity: 0,
         duration: 1.5,
         ease: "power3.out",
     },
-    "3.5"
+        "3.5"
     )
 
 
