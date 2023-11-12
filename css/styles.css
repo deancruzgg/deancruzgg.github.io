@@ -13971,7 +13971,7 @@ body {
 }
 
 .text-parallax {
-  position: relative;
+  position: absolute;
   z-index: 7;
   top: 50%;
   left: 50%;
@@ -14018,6 +14018,29 @@ body {
   display: none;
 }
 
+.static-text-hero {
+  position: absolute;
+  z-index: 7;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  pointer-events: auto;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.static-text-hero h1 {
+  font-size: 6.5rem;
+  font-weight: 600;
+  text-shadow:1px 1px 10px #000, 1px 1px 10px #67c29c;
+}
+
+.static-text-hero h2 {
+  font-size: 2rem;
+  text-shadow:1px 1px 10px #000, 1px 1px 10px #67c29c;
+
+}
+
 @media (max-width: 992px) {
   .divider-container-parallax {
     display: flex;
@@ -14043,6 +14066,16 @@ body {
     font-size: 1.5rem;
     line-height: 1.5rem;
   }
+
+  .static-text-hero h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .static-text-hero h2 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -14064,8 +14097,44 @@ body {
     max-width: 20rem;
     font-size: 1.2rem;
   }
+
+  .static-text-hero {
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    left: 50%;
+  }
+
+  .static-text-hero h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+    letter-spacing: 0.8rem;
+  }
+
+  .static-text-hero h2 {
+    -webkit-text-fill-color: white;
+    max-width: 20rem;
+    font-size: 1.2rem;
+  }
 }
 
 .disable-hover {
   pointer-events: none;
+}
+
+.hide-parallax {
+  display: none;
+}
+
+.show-parallax {
+  display: block !important;
+}
+
+.bg-parallax {
+  display: none;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
 }
