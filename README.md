@@ -24,3 +24,5 @@ https://itssharl.ee/fr/work/act-responsable - individual projects reference
 https://www.youtube.com/watch?v=Yo3j_Dx4u7c - Parallax effect (hero page)
 
 https://gsap.com/ - GSAP Library (Animation)
+
+https://www.youtube.com/watch?v=7eE8xPyXSR4 - Mouse Trails
