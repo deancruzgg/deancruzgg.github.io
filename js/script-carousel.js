@@ -1,16 +1,25 @@
 if (window.matchMedia("(min-width: 999px)").matches) {
-
     const track = document.getElementById("image-track");
+    let isDragging = false;
 
-    const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
+    const handleOnDown = e => {
+        const isLink = e.target.tagName === 'A' || e.target.closest('a');
+        if (!isLink) {
+            isDragging = true;
+            track.dataset.mouseDownAt = e.clientX;
+        }
+    };
 
     const handleOnUp = () => {
-        track.dataset.mouseDownAt = "0";
-        track.dataset.prevPercentage = track.dataset.percentage;
-    }
+        if (isDragging) {
+            isDragging = false;
+            track.dataset.mouseDownAt = "0";
+            track.dataset.prevPercentage = track.dataset.percentage;
+        }
+    };
 
     const handleOnMove = e => {
-        if (track.dataset.mouseDownAt === "0") return;
+        if (!isDragging) return;
 
         const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
             maxDelta = window.innerWidth / 2;
@@ -21,30 +30,25 @@ if (window.matchMedia("(min-width: 999px)").matches) {
 
         track.dataset.percentage = nextPercentage;
 
-        track.animate({
-            transform: `translate(${nextPercentage}%, -50%)`
-        }, { duration: 1200, fill: "forwards" });
+        track.animate([
+            { transform: `translate(${nextPercentage}%, -50%)` }
+        ], { duration: 1200, fill: "forwards" });
 
         for (const image of track.getElementsByClassName("image")) {
-            image.animate({
-                objectPosition: `${100 + nextPercentage}% center`
-            }, { duration: 1200, fill: "forwards" });
+            image.animate([
+                { objectPosition: `${100 + nextPercentage}% center` }
+            ], { duration: 1200, fill: "forwards" });
         }
-    }
+    };
 
-    /* -- Had to add extra lines for touch events -- */
+    window.addEventListener('mousedown', e => handleOnDown(e));
+    window.addEventListener('touchstart', e => handleOnDown(e.touches[0]));
 
-    window.onmousedown = e => handleOnDown(e);
+    window.addEventListener('mouseup', handleOnUp);
+    window.addEventListener('touchend', e => handleOnUp(e.touches[0]));
 
-    window.ontouchstart = e => handleOnDown(e.touches[0]);
-
-    window.onmouseup = e => handleOnUp(e);
-
-    window.ontouchend = e => handleOnUp(e.touches[0]);
-
-    window.onmousemove = e => handleOnMove(e);
-
-    window.ontouchmove = e => handleOnMove(e.touches[0]);
+    window.addEventListener('mousemove', e => handleOnMove(e));
+    window.addEventListener('touchmove', e => handleOnMove(e.touches[0]));
 }
 
 if (window.matchMedia("(min-width: 999px)").matches) {
@@ -56,7 +60,6 @@ if (window.matchMedia("(min-width: 999px)").matches) {
     const animateImage = () => {
         percentage += (direction * 100 / period) * 16;
 
-        // Edit this to adjust how far the track goes before it oscillates
         if (percentage >= 0 || percentage <= -85) {
             direction = -direction;
         }

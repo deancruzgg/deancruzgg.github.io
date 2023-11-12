@@ -13928,6 +13928,7 @@ body {
 .parallax {
   pointer-events: none;
   transition: 0.45s cubic-bezier(.2, .49, .32, .99);
+  will-change: transform;
 }
 
 .bg-08 {
