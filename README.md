@@ -1,28 +1,4 @@
-# Portfolio-Website
-A website where my portfolio will be stored.
+# deancruzgg.github.io
+Aspiring Software Engineer and Front-end Developer, currently a Student pursuing a diploma in Digital Design and Development. Seeking internship opportunities to gain real life experience in a front-end or UI/UX space.
 
-Resources and links used:
-
-https://www.youtube.com/watch?v=WsspKNtaCIg - CSS Center text Horizontal and Vertical
-
-https://css-tricks.com/snippets/css/a-guide-to-flexbox/ - Flexbox reference
-
-https://github.com/riezeleonhart/Shrine_of_Suisei - My very first landing page project
-
-https://www.youtube.com/watch?v=wuUSVEcK-kM - particles effect
-
-https://startbootstrap.com/theme/grayscale - initial bootstrap theme
-
-https://www.youtube.com/watch?v=rc50owRPdUI - used the effect shown in the video on my name
-
-https://www.youtube.com/watch?v=4gcy-qT9kGw - implement a gallery/slideshow feature
-
-https://www.youtube.com/watch?v=PkADl0HubMY - projects animation carousel
-
-https://itssharl.ee/fr/work/act-responsable - individual projects reference
-
-https://www.youtube.com/watch?v=Yo3j_Dx4u7c - Parallax effect (hero page)
-
-https://gsap.com/ - GSAP Library (Animation)
-
-https://www.youtube.com/watch?v=7eE8xPyXSR4 - Mouse Trails
+Email: cruzdean1997@gmail.com
