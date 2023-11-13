@@ -9,7 +9,6 @@
 .chatbot-collapsible {
   display: flex;
   align-items: center;
-  gap: 1rem;
   background-color: #212529;
   cursor: pointer;
   font-weight: bold;
@@ -21,6 +20,7 @@
   border-radius: 10px 10px 0px 0px;
   border: 3px solid #67c29c;
   border-bottom: none;
+  justify-content: space-between;
 }
 
 .chatbot-content {
@@ -212,4 +212,19 @@
 
 .chat-link:hover {
   color: #6c757d;
+}
+
+.chatbot-left {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.chat-arrow {
+  transition: transform 300ms ease-in-out;
+  margin-right: 1rem;
+}
+
+.chatbot-collapsible:hover .chat-arrow {
+  transform: scale(1.5);
 }
