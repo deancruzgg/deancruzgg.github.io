@@ -8,7 +8,6 @@ const staticText = document.querySelector('.static-text-hero');
 var isScrolling = false;
 var scrollTimeout;
 
-if (window.matchMedia("(min-width: 999px)").matches) {
   let xValue = 0, yValue = 0;
 
   let rotateDegree = 0;
@@ -111,10 +110,3 @@ if (window.matchMedia("(min-width: 999px)").matches) {
   },
     "3.5"
   )
-} else {
-  bgParallax.classList.add("show-parallax");
-  staticText.classList.add("show-parallax");
-
-  parallax_el.forEach(el => el.classList.add("hide-parallax"));
-  vignette.classList.add("hide-parallax");
-};
