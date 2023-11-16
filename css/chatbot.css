@@ -228,3 +228,14 @@
 .chatbot-collapsible:hover .chat-arrow {
   transform: scale(1.5);
 }
+
+/* Touch Devices */
+@media (hover: none) {
+  .chatbot-collapsible:hover .chat-arrow {
+    transform: scale(1);
+  }
+
+  .full-chat-block::-webkit-scrollbar {
+    display: none;
+  }
+}
