@@ -14178,16 +14178,4 @@ body::-webkit-scrollbar-track {
   .parallax {
     display: none;
   }
-
-  .vignette {
-    display: none;
-  }
-
-  .bg-parallax {
-    display: block;
-  }
-
-  .static-text-hero {
-    display: block;
-  }
 }
